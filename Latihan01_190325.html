@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8ff;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 50%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Selamat Datang</h1>
+            <p>Belajar elemen semantik HTML5</p>
+        </header>
+
+        <nav>
+            <a href="#"><u>Tentang</u></a> | 
+            <a href="#"><u>Kursus</u></a> | 
+            <a href="#"><u>Kontak</u></a>
+        </nav>
+
+        <section id="tentang">
+            <h2>Tentang Halaman Ini</h2>
+            <p>Ini merupakan contoh untuk menu Tentang</p>
+        </section>
+
+        <section id="kursus">
+            <h2>Daftar Kursus</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Kursus</th>
+                        <th>Durasi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Dasar HTML & CSS</td>
+                        <td>4 Minggu</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>JavaScript Fundamental</td>
+                        <td>6 Minggu</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="kontak">
+            <h2>Hubungi Kami</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan"></textarea>
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 oleh Felicia</p>
+        </footer>
+    </div>
+</body>
+</html>
