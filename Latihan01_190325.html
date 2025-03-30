@@ -11,7 +11,15 @@
             background-color: #f0f8ff;
             padding: 20px;
         }
-        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
         h1 {
             color: #333;
         }
@@ -51,6 +59,11 @@
             border: 1px solid #ddd;
             border-radius: 4px;
         }
+
+        input[type="checkbox"] {
+            float:left
+        }
+
         textarea {
             height: 100px;
         }
@@ -61,6 +74,7 @@
             padding: 10px 15px;
             border-radius: 4px;
             cursor: pointer;
+
         }
         footer {
             margin-top: 20px;
@@ -80,7 +94,8 @@
         <nav>
             <a href="#"><u>Tentang</u></a> | 
             <a href="#"><u>Kursus</u></a> | 
-            <a href="#"><u>Kontak</u></a>
+            <a href="#"><u>Kontak</u></a> |
+            <a href="#"><u>Pendaftaran</u></a>
         </nav>
 
         <section id="tentang">
@@ -127,9 +142,57 @@
                 <div class="form-group">
                     <label for="pesan">Pesan:</label>
                     <textarea id="pesan" name="pesan"></textarea>
-                </div>
-                <button type="submit">Kirim</button>
             </form>
+        </section>
+
+        <section id="pendaftaran">
+            <h2>Pendaftaran</h2>
+            <form>
+                <label for="nama">Nama Lengkap</label>
+                <input type="Text" id="nama" name="nama" required>
+
+                <label for="email">Email</label>
+                <input type="Text" id="email" name="email" required>
+
+                <label for="telepon">Nomor Telepon</label>
+                <input type="tel" id="telepon" nama="telepon" required>
+
+                <label for="prodi">Prodi</label>
+                <input type="text" id="prodi" nama="prodi" required>
+
+                <label for="motivasi">Kata Motivasi</label>
+                <input type="text" id="motivasi" nama="motivasi" required>
+
+                <label for="hobi">Hobi</label>
+                <input type="text" id="hobi" nama="hobi" required>
+
+                <label for="kursus">Pilih Kursus:</label>
+                    <select id="kursus" name="kursus" required>
+                        <option value="">-- Pilih Kursus --</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                        <option value="ui-ux-design">UI/UX Design</option>
+                    </select>
+
+                <label for="tanggal">Tanggal Mulai:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+            
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" rows="4" required></textarea>
+
+                <h4>Kelas</h4>
+
+                <input type="checkbox" id="pagi">
+                <label for="pagi"> Pagi </label>
+
+                <br>
+                <input type="checkbox" id="sore">
+                <label for="sore"> Sore </label>
+                
+            </form>
+            </div>
+            <button type="submit">Kirim</button>
         </section>
 
         <footer>
